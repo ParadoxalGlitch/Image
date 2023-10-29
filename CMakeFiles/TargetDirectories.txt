@@ -1,0 +1,9 @@
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/CMakeFiles/image.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/CMakeFiles/negativo.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/CMakeFiles/subimagen.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/CMakeFiles/zoom.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/CMakeFiles/icono.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/CMakeFiles/contraste.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/CMakeFiles/doc_doxygen.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/CMakeFiles/edit_cache.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/CMakeFiles/rebuild_cache.dir

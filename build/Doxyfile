@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 1. Imágenes"
+OUTPUT_DIRECTORY       = /home/davidpereztobarra/Escritorio/ED/ej01_imagenes/build/doc_doxygen/
+INPUT                  = /home/davidpereztobarra/Escritorio/ED/ej01_imagenes/estudiante/include /home/davidpereztobarra/Escritorio/ED/ej01_imagenes/estudiante/src /home/davidpereztobarra/Escritorio/ED/ej01_imagenes/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/davidpereztobarra/Escritorio/ED/ej01_imagenes/estudiante/doc
+EXTRACT_PRIVATE        = NO

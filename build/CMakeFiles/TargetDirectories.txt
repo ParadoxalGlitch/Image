@@ -1,0 +1,5 @@
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/build/CMakeFiles/image.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/build/CMakeFiles/negativo.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/build/CMakeFiles/doc_doxygen.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/build/CMakeFiles/edit_cache.dir
+/home/davidpereztobarra/Escritorio/ED/ej01_imagenes/build/CMakeFiles/rebuild_cache.dir

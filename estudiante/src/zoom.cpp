@@ -52,29 +52,13 @@ int main (int argc, char *argv[]){
 
 
   // Calculamos las dimensiones y creamos la imagen resultante del zoom
-
+  /*
     int new_size = 2*(lado)-1;
     Image zoomed_image(new_size,new_size);
+  */
 
-
-  // Colocamos los valores iniciales en la nueva imagen de dimension 2*n-1 x 2*n-1 
-
-    for(int i = 0; i < new_size; i+=2)
-        for(int j = 0; j < new_size; j+=2)
-            zoomed_image.set_pixel(i, j, image.get_pixel(fila + (i / 2), col + (j / 2)));
-
-  // Interpolamos sobre las columnas
-
-    for (int i=0; i < new_size; i++)
-      for (int j=1; j < new_size; j+=2)
-        zoomed_image.set_pixel(i,j,round((zoomed_image.get_pixel(i,j-1) + zoomed_image.get_pixel(i,j+1))/2.0));
-
-  // Interpolamos sobre las filas
-
-    for (int i=1; i < new_size; i+=2)
-      for (int j=0; j < new_size; j++)
-        zoomed_image.set_pixel(i,j,round((zoomed_image.get_pixel(i-1,j) + zoomed_image.get_pixel(i+1,j))/2.0));
-
+  Image cropped_image = image.Crop(fila,col,lado,lado);
+  Image zoomed_image = cropped_image.Zoom2X();
 
 
     // Guardar la imagen resultado en el fichero

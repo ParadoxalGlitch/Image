@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['título_20de_20la_20página_20principal_0',['Título de la página principal',['../index.html',1,'']]]
+  ['operator_3d_0',['operator=',['../classImage.html#aeaa2d687caf48e3c72fc773c70a0e9fa',1,'Image']]]
 ];

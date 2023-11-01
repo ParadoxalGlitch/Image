@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['empty_0',['Empty',['../classImage.html#a0866c8c2e288fd753168a9c691ae17d2',1,'Image']]]
+  ['adjustcontrast_0',['AdjustContrast',['../classImage.html#a4884f3eb51efdecc005092534ba7e4ea',1,'Image']]]
 ];

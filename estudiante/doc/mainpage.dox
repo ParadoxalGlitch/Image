@@ -37,5 +37,17 @@ Calcula el negativo de una imagen
 @param <FichImagenDestino> Imagen PGM resultado de calcular el negativo
 
 
+@image html crop.png
+## Subimagen:
+
+Extrae una sección recortada de una imagen
+
+> __subimagen__ \<FichImagenOriginal\> \<FichImagenDestino\> \<Fila\> \<Col\> \<Filas_subimagen\> \<Cols_subimagen\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
+@param <FichImagenDestino> Imagen PGM resultado de recortar la imagen principal
+@param "<Fila>" Fila inicial desde la cual empezar a recortar
+@param "<Col>" Columna inicial desde la cual empezar a recortar
+@param "<Filas_subimagen>" Numero de filas de la sección
+@param "<Cols_subimagen>" Numero de columnas de la sección
 
 */

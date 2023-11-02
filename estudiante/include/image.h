@@ -94,7 +94,7 @@ private :
     LoadResult LoadFromPGM(const char * file_path);
 
     /**
-      @brief Copy una imagen .
+      @brief Copia una imagen .
       @param orig Referencia a la imagen original que vamos a copiar
       @pre Asume que no hay memoria reservada o se ha llamado antes a Destroy()
       @pre Asume this != &orig
@@ -112,7 +112,7 @@ private :
     void Allocate(int nrows, int ncols, byte * buffer = 0);
 
     /**
-      * @brief Destroy una imagen
+      * @brief Destruye una imagen
       *
       * Libera la memoria reservada en la que se almacenaba la imagen que llama a la función.
       * Si la imagen estaba vacía no hace nada .
@@ -132,7 +132,7 @@ public :
       * @brief Constructor con parámetros.
       * @param nrows Número de filas de la imagen.
       * @param ncols Número de columnas de la imagen.
-      * @param value defecto Valor con el que inicializar los píxeles de la imagen . Por defecto O.
+      * @param value Valor con el que inicializar los píxeles de la imagen . Por defecto dicho valor es O.
       * @pre n fils > O Y n_cols > O
       * @post La imagen creada es de n_fils y n_cols columnas. Estará inicializada al valor por defecto.
       * @return Imagen, el objeto imagen creado.
@@ -140,45 +140,44 @@ public :
     Image(int nrows, int ncols, byte value=0);
 
     /**
-      * @brief Constructor de copias.
+      * @brief Constructor de copia.
       * @param orig Referencia a la imagen original que se quiere copiar.
-      * @return Imagen, el objeto imagen creado.
+      * @return Imagen, el objeto imagen copiado.
       */
     Image (const Image & orig);
 
     /**
-      * @brief Oper ador de tipo destructor.
-      * @return void
+      * @brief Destructor
       * @post El objeto Imagen destruido no puede usarse salvo que se haga sobre él una operacion Imagen().
       */
     ~Image() ;
 
     /**
-      * @brief Operador de asignación .
+      * @brief Operador de asignación '='
       * @param orig Referencia a la imagen original que desea copiarse.
       * @return Una referencia al objeto imagen modificado.
-      * @post Destroy cualquier información que contuviera previamente la imagen que llama al operador de asignación.
+      * @post Destruye cualquier información que contuviera previamente la imagen que llama al operador de asignación.
       */
     Image & operator= (const Image & orig);
 
     /**
       * @brief Funcion para conocer si una imagen está vacía.
-      * @return Si la imagene está vacía
-      * @post la imagen no se modifica.
+      * @return Si la imagen está vacía
+      * @post La imagen no se modifica.
       */
     bool Empty() const;
 
     /**
       * @brief Filas de la imagen .
-      * @return El número de filas de la i magen.
-      * @post la imagen no se modifica.
+      * @return El número de filas de la imagen.
+      * @post La imagen no se modifica.
       */
     int get_rows() const;
 
     /**
       * @brief Columnas de la imagen.
       * @return El número de columnas de la imagen.
-      * @post la imagen no se modifica.
+      * @post La imagen no se modifica.
       */
     int get_cols() const;
 
@@ -197,7 +196,7 @@ public :
   * @pre O <= @p i < get_rows()
   * @pre O <= @p j < get_cols()
   * @pre O <= @p value <= 255
-  * @post El píxel (@p i, @p j) de la imagen se modificará y contendrá valor @p value.
+  * @post El píxel (@p i, @p j) de la imagen se modificará y contendrá el valor @p value.
   * Los demás píxeles permanecerán iguales.
   */
 void set_pixel (int i, int j, byte value);
@@ -207,7 +206,7 @@ void set_pixel (int i, int j, byte value);
       * @param i Fila de la imagen en la que se encuentra el píxel a consultar.
       * @param j Columna de la imagen en la que se encuentra el píxel a consultar.
       * @pre O <= fil < I.Num_ Filas() II O <= col < I.Num Columnas()
-      * @return el valor del píxel contenido en (fil,col)
+      * @return El valor del píxel contenido en (fil,col)
       * @post La imagen no se modifica.
       */
     byte get_pixel (int i, int j) const;
